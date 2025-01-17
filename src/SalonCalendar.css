@@ -1,0 +1,164 @@
+/* SalonCalendar.css */
+.calendar-container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .calendar-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .calendar-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .calendar-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .section-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  /* Services Section */
+  .services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .service-item {
+    padding: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .service-item:hover {
+    background-color: #f8fafc;
+  }
+  
+  .service-item.selected {
+    background-color: #e0f2fe;
+    border-color: #0ea5e9;
+  }
+  
+  .service-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .service-name {
+    font-weight: 500;
+  }
+  
+  .service-price {
+    color: #64748b;
+  }
+  
+  .service-duration {
+    font-size: 0.875rem;
+    color: #64748b;
+    margin-top: 0.25rem;
+  }
+  
+  /* Time Slots Section */
+  .time-slots-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .time-slot {
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    background: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .time-slot:hover {
+    background-color: #f8fafc;
+  }
+  
+  .time-slot.selected {
+    background-color: #e0f2fe;
+    border-color: #0ea5e9;
+  }
+  
+  /* Booking Summary */
+  .booking-summary {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #f8fafc;
+    border-radius: 0.5rem;
+  }
+  
+  .summary-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .summary-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .summary-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  .book-button {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #0ea5e9;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .book-button:hover {
+    background-color: #0284c7;
+  }
+  
+  /* General Utilities */
+  .text-gray {
+    color: #64748b;
+  }
+  
+  .font-medium {
+    font-weight: 500;
+  }
+  
+  .mt-4 {
+    margin-top: 1rem;
+  }
+  
+  .space-y-2 > * + * {
+    margin-top: 0.5rem;
+  }
