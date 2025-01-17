@@ -1,15 +1,14 @@
 import Home from './Home'
+import BookingSuccess from './BookingSuccess.jsx'
 import './App.css'
-// import SalonCalendar from './SalonCalendar'
 
 function App() {
- 
+  // Check if we're on the success page
+  const isSuccessPage = window.location.pathname === '/success';
 
   return (
     <div className="container">
-      <Home />
-      {/* <SalonCalendar /> */}
-      
+      {isSuccessPage ? <BookingSuccess /> : <Home />}
     </div>
   )
 }

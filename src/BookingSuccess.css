@@ -1,0 +1,153 @@
+.booking-success {
+    min-height: 100vh;
+    background-color: #f9fafb;
+    padding: 48px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .success-container {
+    max-width: 28rem;
+    width: 100%;
+    background-color: white;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Success Icon */
+  .success-icon-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+  
+  .success-icon {
+    height: 64px;
+    width: 64px;
+    background-color: #d1fae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .success-icon svg {
+    height: 32px;
+    width: 32px;
+    color: #059669;
+  }
+  
+  /* Success Message */
+  .success-message {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  
+  .success-message h2 {
+    font-size: 1.875rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+  }
+  
+  .success-message p {
+    color: #4b5563;
+    margin-bottom: 24px;
+  }
+  
+  /* Reminder Info */
+  .reminder-info {
+    margin-bottom: 24px;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  
+  .info-item .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    margin-top: 2px;
+    color: #9ca3af;
+  }
+  
+  .info-item p {
+    color: #4b5563;
+    line-height: 1.5;
+  }
+  
+  /* Preparation Tips */
+  .prep-tips {
+    background-color: #f9fafb;
+    padding: 16px;
+    border-radius: 6px;
+    margin-bottom: 24px;
+  }
+  
+  .prep-tips h3 {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #111827;
+    margin-bottom: 8px;
+  }
+  
+  .prep-tips ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .prep-tips li {
+    color: #4b5563;
+    font-size: 0.875rem;
+    margin-bottom: 8px;
+    padding-left: 16px;
+    position: relative;
+  }
+  
+  .prep-tips li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+  }
+  
+  /* Actions */
+  .actions {
+    padding-top: 16px;
+    text-align: center;
+  }
+  
+  .home-link {
+    display: inline-flex;
+    align-items: center;
+    color: #4b5563;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .home-link:hover {
+    color: #111827;
+  }
+  
+  .home-link .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .success-container {
+      padding: 24px;
+    }
+    
+    .success-message h2 {
+      font-size: 1.5rem;
+    }
+  }

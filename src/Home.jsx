@@ -5,6 +5,14 @@ import sign from '/src/assets/sign.webp'
 import storeFront from '/src/assets/store-front.webp'
 import StylistCard from '/src/Stylists.jsx'
 import { stylists } from './salon_info';
+import BookNowNav from './BookNowNav';
+import {BookNowButton, BookNowLink} from './BookNow';
+
+import Nav from './Nav';
+import fbIcon from './assets/f_logo_RGB-White_58.png'
+import instaIcon from './assets/Instagram_Glyph_White.png'
+import './Home.css'
+import Products from './Producsts';
 
 const HomePage = () => {
   // Sample services data
@@ -33,8 +41,9 @@ const services = [
 
   return (
     <div className="homepage">
+      <Nav />
       {/* Hero Section */}
-      <div className="hero">
+      <div id="hero" className="hero">
         <div className="hero-overlay" />
        
         <div className="hero-content">
@@ -44,16 +53,16 @@ const services = [
       </div>
 
       {/* About Section */}
-      <section className="about">
+      <section id="about" className="about">
         <h2 className="about-title">WELCOME TO CHROMA</h2>
         <p className="about-text">
           At Chroma Salon, we pride ourselves on our commitment to a fun, luxury guest experience, with a warm welcoming atmosphere that keeps our clients returning again and again. We know you'll love it as much as we do.
         </p>
-        <button className="button">BOOK NOW</button>
+        <BookNowButton />
       </section>
 
       {/* Services Grid */}
-      <section className="services">
+      <section id="services" className="services">
         <div className="services-container">
           <h2 className="services-title">OUR SERVICES</h2>
           <div className="services-grid">
@@ -71,27 +80,20 @@ const services = [
       <div></div>
 
       {/* Stylist Section */}
-      <section className="stylist">
-        <div className="stylist-container">
-          <h2 className="services-title">Our Stylists</h2>
-         <div className="stylist-grid">
-          {stylists.map((stylist, index) => (
-            <div key={index} className="stylist-card">
-              <h3 className="stylist-name">{stylist.name}</h3>
-              
-            </div>
-          ))}
-         </div>
+      <section id='stylists'  className="stylist">
+        <StylistCard />
+      </section>
 
-        </div>
+      <section id="products" className='products'>
+        <Products />
       </section>
 
       {/* Info Section */}
-      <section className="info">
+      <section id='info' className="info">
         <div className="info-container">
           <div>
             <h2 className="info-title">LOCATION & HOURS</h2>
-            <div className="info-content">
+            <div className="info-content  ">
               <div className="contact-item">
                 <MapPin className="contact-icon" />
                 <a href="https://www.google.com/maps/place/Chroma+Salon/@47.2496855,-122.483303,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xe6fd442cbcebf794!8m2!3d47.2496855!4d-122.483303"> <p>1201 S Union Ave Suite 1<br />Tacoma, WA 98405</p> </a>
@@ -116,13 +118,13 @@ const services = [
               Ready to transform your look? Schedule your appointment online 
               or give us a call. New clients are always welcome.
             </p>
-            <button className="button">SCHEDULE NOW</button>
+            <BookNowLink />
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="footer">
+      <footer id='footer' className="footer">
         <div className="footer-container">
           <div>
             <h3 className="footer-title">CHROMA SALON</h3>
@@ -132,12 +134,11 @@ const services = [
             <h3 className="footer-title">CONTACT</h3>
             <a href="tel:2537526955"><p className="footer-text">(253) 752-6955</p></a>
           </div>
-          <div>
+          <div id='contact'>
             <h3 className="footer-title">FOLLOW US</h3>
             <div className="social-links">
-              <button className="social-link">Instagram</button>
-              <button className="social-link">Facebook</button>
-              <button className="social-link">Pinterest</button>
+             <a className='insta-link' href="https://www.facebook.com/ChromaSalonTacoma/"><img src={instaIcon}className="insta-icon"  alt="" /></a>
+             <a className='fb-link' href="https://www.instagram.com/chromasalontacoma/"><img src={fbIcon}className="insta-icon"  alt="" /></a>
             </div>
           </div>
         </div>

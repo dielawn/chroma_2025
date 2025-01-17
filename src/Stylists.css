@@ -1,0 +1,163 @@
+/* Stylist Section Container */
+.stylist-container {
+    padding: 6rem 2rem;
+    max-width: 72rem;
+    margin: 0 auto;
+  }
+  
+  .services-title {
+    font-size: 1.875rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 4rem;
+    letter-spacing: 0.05em;
+  }
+  
+  /* Stylist Grid Layout */
+  .stylist-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  @media (min-width: 640px) {
+    .stylist-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .stylist-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Stylist Card */
+  .stylist-card {
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #f3f4f6;
+  }
+  
+  .stylist-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Stylist Image */
+  .stylist-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    margin: 1.5rem 0;
+    border-radius: 2px;
+  }
+  
+  /* Stylist Information */
+  .stylist-name {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.05em;
+  }
+  
+  .stylist-title {
+    color: #6b7280;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+  }
+  
+  /* Bio Container and Expandable Bio */
+  .bio-container {
+    position: relative;
+    width: 100%;
+    margin: 1rem 0;
+  }
+  
+  .stylist-bio {
+    color: #4b5563;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    max-height: 4.8em; /* Show 3 lines of text */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    position: relative;
+    margin: 0;
+  }
+  
+  .stylist-bio.expanded {
+    max-height: 1000px; /* Large enough to show full content */
+  }
+  
+  .read-more-btn {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .read-more-btn:hover {
+    color: #4b5563;
+  }
+  
+  /* Contact Information */
+  .stylist-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+  
+  .stylist-contact a {
+    color: #4b5563;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-size: 0.95rem;
+  }
+  
+  .stylist-contact a:hover {
+    color: #000;
+  }
+  
+  /* Social Media Links */
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+  
+  .fb-icon,
+  .insta-icon,
+  .expand-icon {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+  }
+  
+  .fb-icon:hover,
+  .insta-icon:hover,
+  .expand-icon:hover {
+    opacity: 1;
+  }
+  
+  .fb-link,
+  .insta-link {
+    display: inline-block;
+    margin: 0 0.5rem;
+  }
+
