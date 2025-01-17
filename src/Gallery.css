@@ -1,0 +1,50 @@
+.gallery-container {
+  min-height: 50vh;
+  background-color: black;
+  padding: 20px;
+  margin: 50px;
+}
+
+.gallery-title {
+  color: white;
+  font-size: 1.875rem;
+  font-weight: 300;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+/* Update these styles in Gallery.css */
+.carousel-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.dot-indicator {
+  height: 10px;
+  max-width: 10px;
+  border-radius: 50%;
+  padding: 7px;
+  margin: 2px;
+}
+
+
+.carousel-slide > div.active {
+  opacity: 1;
+  visibility: visible;
+  
+}
+
+/* Make sure images fill their container */
+.carousel-image {
+  width: 100%;
+ max-height: 50vh;
+  object-fit: contain;
+  display: block; /* Ensure image is block-level */
+  padding: 10px;
+}
+
+.controls-container {
+  display: flex;
+  justify-content: space-around;
+}

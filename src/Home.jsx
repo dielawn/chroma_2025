@@ -1,8 +1,7 @@
 import React from 'react';
 import { Calendar, Clock, MapPin, Phone } from 'lucide-react';
 import logoBlk from '/src/assets/logo-chroma-blk.png'
-import sign from '/src/assets/sign.webp'
-import storeFront from '/src/assets/store-front.webp'
+
 import StylistCard from '/src/Stylists.jsx'
 import { stylists } from './salon_info';
 import BookNowNav from './BookNowNav';
@@ -13,6 +12,7 @@ import fbIcon from './assets/f_logo_RGB-White_58.png'
 import instaIcon from './assets/Instagram_Glyph_White.png'
 import './Home.css'
 import Products from './Producsts';
+import Gallery from './Gallery';
 
 const HomePage = () => {
   // Sample services data
@@ -77,11 +77,15 @@ const services = [
         </div>
       </section>
 
-      <div></div>
+    
 
       {/* Stylist Section */}
       <section id='stylists'  className="stylist">
         <StylistCard />
+      </section>
+
+      <section id='gallery' className="gallery">
+            <Gallery />
       </section>
 
       <section id="products" className='products'>

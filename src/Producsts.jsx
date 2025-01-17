@@ -40,11 +40,7 @@ const Products = () => {
                             src={product.logo} 
                             alt={`${product.company} logo`} 
                             className="productLogo"
-                            onError={(e) => {
-                                console.error(`Failed to load ${product.company} logo`);
-                                e.target.style.display = 'none';
-                            }}
-                            onLoad={() => console.log(`Successfully loaded ${product.company} logo`)}
+                            
                         />
                     </a>
                 </div>

@@ -40,6 +40,9 @@ const Nav = () => {
                     <a href="#stylist" 
                        onClick={(e) => scrollToSection(e, 'stylists')} 
                        className="nav-link">Stylists</a>
+                    <a href="#gallery" 
+                        onClick={(e) => scrollToSection(e, 'gallery')} 
+                        className="nav-link">Gallery</a>
                     <a href="#products" 
                        onClick={(e) => scrollToSection(e, 'products')} 
                        className="nav-link">Products</a>

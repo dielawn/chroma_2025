@@ -88,16 +88,7 @@ const stylists = [
     image: rachelDrob, 
     bio: "Rachel is a passionate creative stylist who loves to try new techniques and styles. With a career spanning 3 states she’s catered to all kinds of people, culture  and styles across the board. She loves to do creative colors, and challenging color corrections that most stylists turn down. She loves to learn new things and a good challenge! Her specialty is low maintenance and very blended natural highlights. Though she loves all things creative and color,  people are her real love so if you are looking for a caring stylist who aims to please she’s your girl!"
     },
-    {name: 'Ashley Shin', 
-    title: 'Stylist', 
-    phone: '253652880', 
-    facebook: '', 
-    instagram: 'https://www.instagram.com/ashley_colorist253/', 
-    email: '', 
-    website: '', 
-    image: ashleyShin, 
-    bio: "Ashley Shin is a highly skilled colorist at Chroma Salon, with extensive training from Gene Juarez. She specializes in all things color and balayage, and has a passion for creating personalized looks for each of her guests. Ashley's lived-in colors are customized to flatter each person's unique features and skin tone, resulting in a natural, effortless look. She takes the time to listen to her clients' needs and preferences, and works closely with them to create a customized color that enhances their natural beauty. Ashley's attention to detail and commitment to using high-quality products ensures that each client leaves the salon feeling confident and beautiful. If you're looking for a talented colorist who can create a stunning, personalized look just for you, Ashley is the perfect choice at Chroma Salon."
-    },
+   
     {name: 'Crystal Coralles', 
     title: 'Stylist', 
     phone: '2533891460', 
