@@ -51,11 +51,7 @@ const Gallery = () => {
                         className="carousel-image"
                     />
                 </div>
-            </div>
-
-            {/* Navigation Buttons */}
-           
-            
+            </div>           
 
             {/* Controls Container */}
             <div className="controls-container">

@@ -26,15 +26,7 @@
     position: relative;
 }
 
-/* .chromaIcon {
-    position: absolute;
-    bottom: 50%;
-    transform: translate(200%, 50%);
-    z-index: 1;
-    height: 40px;
-    width: 40px;
-    object-fit: cover;
-  } */
+
   .nav-name {
     z-index: 9;
   }

@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import BookNowNav from './BookNowNav';
 import './Nav.css';
-import chromaIcon from './assets/chroma_icon.png'
 
 const Nav = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +24,7 @@ const Nav = () => {
         <nav className="nav">
             <div className="nav-container">
                 <div className="nav-brand">
-                    {/* <img src={chromaIcon} alt="Icon" className="chromaIcon" /> */}
+                    
                     <a className='nav-name' href="#" onClick={(e) => scrollToSection(e, 'hero')}>CHROMA SALON</a>
                 </div>
 

@@ -1,12 +1,7 @@
 import React from 'react';
 import { Calendar, Clock, MapPin, Phone } from 'lucide-react';
-import logoBlk from '/src/assets/logo-chroma-blk.png'
-
 import StylistCard from '/src/Stylists.jsx'
-import { stylists } from './salon_info';
-import BookNowNav from './BookNowNav';
 import {BookNowButton, BookNowLink} from './BookNow';
-
 import Nav from './Nav';
 import fbIcon from './assets/f_logo_RGB-White_58.png'
 import instaIcon from './assets/Instagram_Glyph_White.png'
@@ -17,7 +12,6 @@ import chromaIcon from './assets/chroma_icon.png'
 import { services } from './salon_info';
 
 const HomePage = () => {
-  // Sample services data
 
   return (
     <div className="homepage">
