@@ -33,7 +33,12 @@ const BookNowButton = () => {
 const BookNowLink = () => {
     return (
         <div className="vagaro-link">
-            <a href="https://www.vagaro.com//chromasalon" className="book-now-link">
+            <a 
+                href="https://www.vagaro.com/chromasalon71/book-now" 
+                className="book-now-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
                 Book Now
             </a>
         </div>

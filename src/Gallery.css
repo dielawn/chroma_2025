@@ -1,3 +1,4 @@
+/* Base styles */
 .gallery-container {
   min-height: 50vh;
   background-color: black;
@@ -12,12 +13,25 @@
   margin-bottom: 4rem;
   text-align: center;
 }
-/* Update these styles in Gallery.css */
+
 .carousel-slide {
   position: relative;
   width: 100%;
   height: 100%;
   transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-image {
+  width: 100%;
+  max-height: 50vh;
+  object-fit: contain;
+  display: block;
+  padding: 10px;
+}
+
+.controls-container {
+  display: flex;
+  justify-content: space-around;
 }
 
 .dot-indicator {
@@ -28,23 +42,77 @@
   margin: 2px;
 }
 
-
 .carousel-slide > div.active {
   opacity: 1;
   visibility: visible;
-  
 }
 
-/* Make sure images fill their container */
-.carousel-image {
-  width: 100%;
- max-height: 50vh;
-  object-fit: contain;
-  display: block; /* Ensure image is block-level */
-  padding: 10px;
+/* Mobile styles (phones) */
+/* In your existing media query for mobile */
+@media screen and (max-width: 480px) {
+  .dot-indicator {
+      display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .gallery-container {
+    height: 60vh; /* Slightly smaller fixed height for mobile */
+    min-height: 400px; /* Minimum height to prevent collapse */
+    margin: 20px;
+    padding: 10px;
+    position: relative;
 }
 
-.controls-container {
-  display: flex;
-  justify-content: space-around;
+  .gallery-title {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+  }
+
+  .carousel-image {
+      max-height: 40vh;
+      padding: 5px;
+  }
+
+  .dot-indicator {
+      padding: 5px;
+      margin: 1px;
+  }
+
+  .controls-container {
+    display: none;
+  }
+  .play-pause-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%); 
+  }
+}
+
+/* Small tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .gallery-container {
+      margin: 30px;
+      padding: 15px;
+  }
+
+  .gallery-title {
+      font-size: 1.65rem;
+      margin-bottom: 3rem;
+  }
+}
+
+/* Landscape orientation for mobile */
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  .gallery-container {
+      min-height: 70vh;
+  }
+
+  .carousel-image {
+      max-height: 60vh;
+  }
+
+  .gallery-title {
+      margin-bottom: 1.5rem;
+  }
 }

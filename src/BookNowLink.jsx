@@ -6,7 +6,7 @@ const BookNowLink = () => {
     useEffect(() => {
         const script = document.createElement('script');
         script.type = 'text/javascript';
-        script.src = "https://www.vagaro.com//resources/WidgetWindowLoader/OZqqD3WpD2PqFJ5y79oz34mC2PlFK9lRsiWJcyxapkUcvCu7gCmjZcoapOUcPCvdfQOW?v=TNVKEPcm3XkTEHGOqLKCH4s8a8KY7y4R5UuzpTpirmN#";
+        script.src = 'https://www.vagaro.com//resources/WidgetWindowLoader/OZqqD3WpD2PqFJ5y79oz34mC2PlFK9lRsiWJcyxapkUcvCu7gCmjZcoapOUcPCvdfQOW?v=TNVKEPcm3XkTEHGOqLKCH4s8a8KY7y4R5UuzpTpirmN#';
         script.async = true;
         
         // Add script to the vagaro div instead of body

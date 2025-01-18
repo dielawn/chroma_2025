@@ -10,7 +10,7 @@
 
 /* Products title */
 .products-section h3 {
-    grid-column: 1 / -1;  /* Spans all columns */
+    grid-column: 1 / -1;
     font-size: 1.875rem;
     font-weight: 300;
     text-transform: uppercase;
@@ -21,18 +21,33 @@
 
 /* Products grid container */
 .products-grid {
-    grid-column: 1 / -1;  /* Spans all columns */
+    grid-column: 1 / -1;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem; /* Optionally reduce gap on mobile */
+    }
+    
+    .products-section {
+        padding: 2rem 1rem; /* Reduce padding on mobile */
+        grid-template-columns: 1fr; /* Single column for section on mobile */
+    }
+}
+
+/* Tablet and up */
 @media (min-width: 768px) {
-    .products {
+    .products-grid {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
-/* Product Card */
+/* Rest of your CSS remains the same */
 .productCard {   
     background-color: white;    
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -47,7 +62,6 @@
     border: 1px solid #f3f4f6;
 }
 
-/* Product Link */
 .productLink {
     display: flex;
     justify-content: center;
@@ -57,7 +71,6 @@
     text-decoration: none;
 }
 
-/* Product Logo */
 .productLogo {
     display: block;
     max-width: 100px;

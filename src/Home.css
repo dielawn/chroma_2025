@@ -9,7 +9,32 @@
     position: relative;
     height: 100vh;
   }
-  
+
+/* Add this to your existing CSS */
+
+@keyframes riseUp {
+  0% {
+    transform: translate(-50%, 400%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, 100%);
+    opacity: 1;
+  }
+}
+
+.chromaIcon {
+  position: absolute;
+  bottom: 50%;
+  transform: translate(-50%, 100%);
+  z-index: 1;
+  object-fit: cover;
+  animation: riseUp 1.75s ease-out;
+  /* Optional: add these properties for a smoother animation */
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
   .hero-overlay {
     position: absolute;
     inset: 0;
@@ -30,6 +55,7 @@
     justify-content: center;
     align-items: center;
     color: white;
+    z-index: 99;
   }
   
   .hero-title {

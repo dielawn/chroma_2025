@@ -6,6 +6,30 @@ const salonInfo = {
     phone: '253-752-6955',
 }
 
+const services = [
+    {
+      name: 'HAIRCUT',
+      description: 'Precision cut tailored to you.',
+    },
+    {
+      name: 'STYLE',
+      description: 'Professional styling tailored to your face shape and lifestyle.',
+    },
+    {
+      name: 'COLOR & HIGHLIGHTS',
+      description: 'Full color, or dimensional highlights using premium products.',
+    },
+    {
+      name: 'BALAYAGE',
+      description: "If you're seeking a sun-kissed glow or something more dramatic yet easy to grow out, you'll want to schedule a balayage appointment with one of our highly trained artists.",
+    },
+    {
+      name: 'AIRBRUSH TANNING',
+      description: 'Airbrush tanning is a popular choice for those who want a natural-looking, sun-kissed glow without the harmful effects of UV rays.'
+    }
+  ];
+  
+
 // Images
 import lindsayRyder from './assets/lindsay-ryder2.webp'
 import jackieEpperson from './assets/jackie-epperson.webp'
@@ -147,5 +171,6 @@ const stylists = [
 
 export {
     salonInfo,
-    stylists
+    stylists, 
+    services
 }

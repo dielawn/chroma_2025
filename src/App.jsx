@@ -5,7 +5,7 @@ import './App.css'
 function App() {
   // Check if we're on the success page
   const isSuccessPage = window.location.pathname === '/success';
-  const isPhotoGallery = window.location.pathname === '/gallery';
+  
 
   return (
     <div className="container">

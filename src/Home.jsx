@@ -13,31 +13,11 @@ import instaIcon from './assets/Instagram_Glyph_White.png'
 import './Home.css'
 import Products from './Producsts';
 import Gallery from './Gallery';
+import chromaIcon from './assets/chroma_icon.png'
+import { services } from './salon_info';
 
 const HomePage = () => {
   // Sample services data
-const services = [
-  {
-    name: 'HAIRCUT',
-    description: 'Precision cut tailored to you.',
-  },
-  {
-    name: 'STYLE',
-    description: 'Professional styling tailored to your face shape and lifestyle.',
-  },
-  {
-    name: 'COLOR & HIGHLIGHTS',
-    description: 'Full color, or dimensional highlights using premium products.',
-  },
-  {
-    name: 'BALAYAGE',
-    description: "If you're seeking a sun-kissed glow or something more dramatic yet easy to grow out, you'll want to schedule a balayage appointment with one of our highly trained artists.",
-  },
-  {
-    name: 'AIRBRUSH TANNING',
-    description: 'Airbrush tanning is a popular choice for those who want a natural-looking, sun-kissed glow without the harmful effects of UV rays.'
-  }
-];
 
   return (
     <div className="homepage">
@@ -50,6 +30,7 @@ const services = [
           <h1 className="hero-title">CHROMA SALON</h1>
           <p className="hero-subtitle">ELEVATE YOUR STYLE</p>
         </div>
+        <img src={chromaIcon} alt="Icon" className="chromaIcon" />
       </div>
 
       {/* About Section */}
