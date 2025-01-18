@@ -11,6 +11,7 @@
     text-align: center;
     margin-bottom: 4rem;
     letter-spacing: 0.05em;
+    color: #404349;
   }
   
   /* Stylist Grid Layout */
@@ -66,10 +67,11 @@
     font-weight: 300;
     margin-bottom: 0.5rem;
     letter-spacing: 0.05em;
+    color: #212224;
   }
   
   .stylist-title {
-    color: #6b7280;
+    color: #404349;
     font-size: 1rem;
     margin-bottom: 1rem;
     font-weight: 300;

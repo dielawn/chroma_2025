@@ -72,6 +72,7 @@
     border: none;
     cursor: pointer;
     padding: 0.5rem;
+    color: #262729;
 }
 
 /* Mobile Styles */
@@ -91,6 +92,7 @@
         padding: 1rem;
         gap: 1rem;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        
     }
 
     .nav-links.active {
